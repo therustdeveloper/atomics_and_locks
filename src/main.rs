@@ -1,3 +1,7 @@
+use r::print_title;
+
 fn main() {
-    println!("Hello, world!");
+    print_title("Atomics and Locks");
+
+    r::chapter01::master(true);
 }
