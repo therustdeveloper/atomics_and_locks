@@ -42,7 +42,8 @@ fn demo_closure(show: bool) {
             for n in numbers {
                 println!("{}", n);
             }
-        }).join().unwrap();
+        })
+        .join()
+        .unwrap();
     }
 }
-

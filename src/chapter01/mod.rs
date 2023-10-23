@@ -1,7 +1,8 @@
 use crate::print_title;
 
-mod thread_demo;
 mod thread_closure;
+mod thread_demo;
+mod thread_scope;
 
 pub fn master(show: bool) {
     if show {
@@ -9,5 +10,6 @@ pub fn master(show: bool) {
 
         thread_demo::master(false);
         thread_closure::master(false);
+        thread_scope::master(false);
     }
 }
