@@ -8,6 +8,6 @@ pub fn master(show: bool) {
         print_title("Chapter 01 - Basics of Rust Concurrency");
 
         thread_demo::master(false);
-        thread_closure::master(true);
+        thread_closure::master(false);
     }
 }
