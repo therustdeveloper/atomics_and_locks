@@ -3,7 +3,7 @@ use std::thread;
 
 pub fn master(show: bool) {
     if show {
-        print_title("Threads");
+        print_title("Scoped Threads");
 
         let numbers = vec![1, 2, 3, 4, 5, 6, 7];
 
