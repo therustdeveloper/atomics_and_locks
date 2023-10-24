@@ -1,6 +1,7 @@
 use crate::print_title;
 use std::sync::Mutex;
 use std::thread;
+use std::time::Duration;
 
 pub fn master(show: bool) {
     if show {
@@ -14,6 +15,7 @@ pub fn master(show: bool) {
                     for _ in 0..100 {
                         *guard += 1;
                     }
+                    thread::sleep(Duration::from_secs(1));
                 });
             }
         });
